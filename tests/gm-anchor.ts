@@ -41,7 +41,6 @@ describe("gm-anchor", () => {
     const storedName = await program.account.greetingAccount.fetch(gmAccount.publicKey);
     console.log(storedName.name);
 
-    // Ensure the price returned is a positive value
     expect(storedName.name).to.equal(name);
 
   });
